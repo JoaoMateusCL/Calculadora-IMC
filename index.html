@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto-CalculadorIMC</title>
+</head>
+<body> 
+    <header>
+        <h1 class="titulo">Calculadora de IMC</h1>
+    </header>
+    <section class="area-Formulario">
+        <fieldset>
+            <div class="sexo">
+                <label for="sexo">Qual seu sexo? </label>
+                <select id="sexo" onchange="">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino" selected>Feminino</option>
+                </select>   
+            </div>
+            
+            <div class="altura">
+                <label for="altura">Qual sua altura?</label>
+                <input type="number" name="altura" id="altura">
+            </div>
+            
+            <div class="peso">
+                <label for="peso">Qual peso? </label>
+                <input type="number" name="peso" id="peso">
+            </div>
+            
+            <div class="btn">
+                <input id="botao" type="button" value="Calcular" onclick="calcular()">
+            </div>
+            
+            <div id="resultado">
+                
+            </div>
+        </fieldset>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
